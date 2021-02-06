@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./login.css">
+  <title>Calendar</title>
+</head>
+<body>
+  <form class="form-container" onsubmit=" return validate()">
+    <p id="error"></p>
+    <h3>login</h3>
+    <div class="form-grp">
+      <label for="username">username</label><br>
+      <input type="text" name="username" placeholder="username" id="user">
+      <i class="fa fa-times u_times"></i>
+      <i class="fa fa-check u_check"></i>
+    </div>
+
+    <div class="form-grp">
+      <label for="password">password</label><br>
+      <input type="text" name="password" placeholder="password" id="pass">
+      <i class="fa fa-times p_times"></i>
+      <i class="fa fa-check p_check"></i>
+    </div>
+
+
+    <div class="form-grp" >
+      <input type="submit" name="login-btn" value="Login", onClick="location.href='hobies.html'">
+    </div> 
+
+
+  </form>
+  <script src="./login.js"></script>
+</body>
+</html>
